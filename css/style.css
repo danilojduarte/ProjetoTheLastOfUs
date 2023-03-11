@@ -19,10 +19,6 @@ body {
     justify-content: space-evenly;
 }
 
-.informacoes {
-    background-color: greenyellow;
-}
-
 .informacoes .logo {
     max-width: 350px;
     filter: invert(1);
@@ -41,8 +37,6 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
-
-    background-color: red;
 }
 
 .botoes__carrossel .botao {
@@ -60,7 +54,6 @@ body {
 }
 
 .menu__lateral {
-    background-color: blue;
     position: fixed;
     top: 0;
     right: 0;
@@ -86,4 +79,37 @@ body {
 
 .menu__lateral .icone:hover {
     transform: scale(1.3);
+}
+
+/* Estilizando Carrossel */
+
+.carrossel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.carrossel .img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: none;
+    animation: mudarImagem 0.7s;
+}
+
+.carrossel .img.ativo {
+    display: block;
+}
+
+
+/* Animacoes */
+@keyframes mudarImagem {
+    from {
+        opacity: 0.85;
+    }
+    to {
+        opacity: 1;
+    }
 }
