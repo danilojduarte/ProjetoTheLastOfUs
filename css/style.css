@@ -43,5 +43,18 @@ body {
     gap: 20px;
 
     background-color: red;
+}
 
+.botoes__carrossel .botao {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    border-color: #fff;
+    
+    background-color: #fff;
+}
+.botoes__carrossel .botao.selecionado {
+    background-color: #1d8346;
 }
