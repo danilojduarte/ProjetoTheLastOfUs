@@ -33,4 +33,15 @@ body {
     width: 49%;
     font-size: 24px;
     color: #fff;
+    line-height: 30px;
+}
+
+/* Esilizando botoes */
+.botoes__carrossel {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    background-color: red;
+
 }
