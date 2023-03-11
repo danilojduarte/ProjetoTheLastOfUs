@@ -6,3 +6,31 @@
     list-style: none;
     text-decoration: none;
 }
+
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-evenly;
+}
+
+.informacoes {
+    background-color: greenyellow;
+}
+
+.informacoes .logo {
+    max-width: 350px;
+    filter: invert(1);
+    margin-bottom: 80px;
+}
+
+.informacoes .descricao {
+    width: 49%;
+    font-size: 24px;
+    color: #fff;
+}
